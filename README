@@ -1,0 +1,32 @@
+#################################
+
+Author: John Hossler, with assistance from Pete Dietl
+email: john.m.hossler@gmail.com
+
+#################################
+
+
+You will need to install ncurses before running this program.
+
+THERE ARE TWO METHODS
+Do this by running:
+
+sudo apt-get update
+sudo apt-get install ncurses-dev
+
+OR:
+go to http://www.gnu.org/prep/ftp.html
+download the tar file
+run:
+tar zxvf ncurses<version>.tar.gz
+cd ncurses<version>
+./configure
+
+make
+su root (OR sudo make install)
+make install
+
+
+Then run in the pong directory:
+make
+pong --- This starts the game!
