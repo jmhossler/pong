@@ -4,6 +4,9 @@
 #include <curses.h>
 #include <math.h>
 #include "paddles.h"
+#include "screen.h"
+#include "difficulty.h"
+#include "logic.h"
 #include <unistd.h>
     
 int
