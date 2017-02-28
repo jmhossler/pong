@@ -1,10 +1,10 @@
-OBJS := pong.o paddles.o screen.o difficulty.o logic.o 
-CC := gcc
-LDLIBS := -lncurses -lm 
-VPATH := src
-TARGET := pong
-.PHONY: clean
+BLD_DIR := bld_dir
+SRC_DIR := $(shell pwd)/src
 
-$(TARGET): $(OBJS)
+all:
+	mkdir -p $(BLD_DIR)
+	cp -sf $(SRC_DIR)/* $(BLD_DIR)
+	$(MAKE) -C $(BLD_DIR)
+
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -rf $(BLD_DIR)

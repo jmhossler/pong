@@ -1,20 +1,15 @@
-pong: paddles.o screen.o difficulty.o pong.o logic.o
-	gcc pong.o paddles.o screen.o difficulty.o logic.o -lncurses -lm -o pong
+OBJS := pong.o paddles.o screen.o difficulty.o logic.o 
+CC := gcc
+LDLIBS := -lncurses -lm 
+TARGET := pong
+.PHONY: clean
 
-pong.o: pong.c
-	gcc -lncurses -lm -c pong.c
+$(TARGET): $(OBJS)
 
-logic.o: logic.c
-	gcc -lncurses -c logic.c
-
-paddles.o: paddles.c
-	gcc -c paddles.c
-
-difficulty.o: difficulty.c
-	gcc -lncurses -c difficulty.c
-
-screen.o: screen.c
-	gcc -lncurses -c screen.c
+difficulty.o: difficulty.h
+logic.o: logic.h
+paddles.o: paddles.h
+screen.o: paddles.h difficulty.h screen.h
 
 clean:
-	rm screen.o difficulty.o paddles.o pong.o logic.o
+	rm -f $(OBJS) $(TARGET)
