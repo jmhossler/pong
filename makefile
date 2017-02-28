@@ -6,6 +6,7 @@ all:
 	mkdir -p $(BLD_DIR)
 	cp -sf $(SRC_DIR)/* $(BLD_DIR)
 	$(MAKE) -C $(BLD_DIR)
+	cp $(BLD_DIR)/pong .
 
 clean:
-	rm -rf $(BLD_DIR)
+	rm -rf $(BLD_DIR) pong
