@@ -1,5 +1,6 @@
 BLD_DIR := bld_dir
 SRC_DIR := $(shell pwd)/src
+.PHONY: all clean
 
 all:
 	mkdir -p $(BLD_DIR)

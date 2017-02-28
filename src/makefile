@@ -1,5 +1,6 @@
 OBJS := pong.o paddles.o screen.o difficulty.o logic.o 
 CC := gcc
+CFLAGS := -Wall -Wextra -g
 LDLIBS := -lncurses -lm 
 TARGET := pong
 .PHONY: clean

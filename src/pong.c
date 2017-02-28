@@ -44,8 +44,6 @@ main(int argc, char **argv){
     int test1 = 0;
     int test2 = 0;
     int testpad = 0;
-    int testh = 0;
-    int testc = 0;
 
     while(1){
         randnumb = rand() % 50;
@@ -56,9 +54,6 @@ main(int argc, char **argv){
         
         testHit(ball,comp,&test1);
         testHit(ball,hum,&test1);
-
-        //testHit(ball,comp,&test2);
-        //testHit(ball,hum,&test2);
 
         testWall(ball,&test1,&test2,&bestOutOf);
 
@@ -100,22 +95,6 @@ main(int argc, char **argv){
                 changeDY(abs(ball->dy) * -1,ball);
                 break;
         }
-
-        /*switch(testh){
-            case 0:
-                break;
-            case 1:
-                changeDX(ball->dx + hum->dy,ball);
-                break;
-        }
-
-        switch(testc){
-            case 0:
-                break;
-            case 1:
-                changeDX(ball->dx + comp->dy,ball);
-                break;
-        }*/
 
         switch(testpad){
             case 0:
