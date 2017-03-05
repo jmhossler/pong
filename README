@@ -1,10 +1,9 @@
 #################################
 
 Author: John Hossler, with assistance from Pete Dietl
-email: john.m.hossler@gmail.com
-
+email:  john.m.hossler@gmail.com
+        petedietl@gmail.com
 #################################
-
 
 You will need to install ncurses before running this program.
 
@@ -29,4 +28,4 @@ make install
 
 Then run in the pong directory:
 make
-pong --- This starts the game!
+./pong --- This starts the game!
