@@ -4,7 +4,7 @@ SRC_DIR := $(shell pwd)/src
 
 all:
 	mkdir -pv $(BLD_DIR)
-	cp -sfv $(SRC_DIR)/* $(BLD_DIR)
+	cp -fv $(SRC_DIR)/* $(BLD_DIR)
 	$(MAKE) -C $(BLD_DIR)
 	cp -v $(BLD_DIR)/pong .
 
