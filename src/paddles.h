@@ -15,4 +15,7 @@ void changeDX(int, Ball *);
 void changeDY(int, Ball *);
 void movePaddle(Paddle *);
 void changePaddle(int, Paddle *);
+
+#define woah
+
 #endif
