@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <curses.h>
+#include <ncurses.h>
 #include "difficulty.h"
 
 void difficulty(int *value)
