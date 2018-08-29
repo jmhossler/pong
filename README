@@ -30,4 +30,4 @@ Then run in the pong directory:
 make
 ./pong --- This starts the game!
 
-This is change
+This is an attempt to configure hooks in Github
