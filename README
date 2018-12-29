@@ -27,7 +27,7 @@ make install
 
 
 Then run in the pong directory:
-make
+mkdir build && cd build && cmake ../src && make
 ./pong --- This starts the game!
 
 This is an attempt to configure hooks in Github
